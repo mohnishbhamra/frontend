@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: hsla(240, 2%, 90%, 0.872);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+.top-block {
+    top: 10%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+}
+
+.question-block {
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 2.5%;
+    position: relative;
+}
+
+.question-block.open {
+    background-image: url('https://media.istockphoto.com/id/532956537/vector/dialog-speech-bubbles-with-two-faces.jpg?s=612x612&w=is&k=20&c=OMjRr9V5Wg6454FuBOIINx_rQBPB8tC6hASVItmQJ-0=');
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0, -100%;
+    padding: 20px;
+}
+
+.question-block .btn {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
+
+.question-block.collapse {
+    background-color: rgb(166, 164, 164);
+    font-size: large;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-block.collapse .btn{
+    top: 10%;
+}
+
+.question-block.collapse .question {
+    margin-left: 2%;
+    padding: 5px;
+    display: flex;
+}
+
+
+.question-block.collapse .answer {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+}
+
+
+.answer {
+    padding: 20px;
+}
+
+
+.fa-xmark {
+    color: white;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: rgb(46, 42, 42);
+    border-radius: 50%;
+}
+
+.fa-angle-down {
+    color: white;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
